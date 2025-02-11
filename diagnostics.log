@@ -1,0 +1,45 @@
+[2025-02-11 22:28:15] Starting check for URL: https://sre-test-assignment.innervate.tech/
+[2025-02-11 22:28:15] HTTP Status Code: 200
+[2025-02-11 22:28:15] Check failed - Content does not contain 'success'
+[2025-02-11 22:28:15] Starting all diagnostics for sre-test-assignment.innervate.tech
+[2025-02-11 22:28:15] Running ping test for sre-test-assignment.innervate.tech
+PING sre-test-assignment.innervate.tech (108.138.51.28) 56(84) bytes of data.
+64 bytes from server-108-138-51-28.waw51.r.cloudfront.net (108.138.51.28): icmp_seq=1 ttl=250 time=17.1 ms
+64 bytes from server-108-138-51-28.waw51.r.cloudfront.net (108.138.51.28): icmp_seq=2 ttl=250 time=25.6 ms
+64 bytes from server-108-138-51-28.waw51.r.cloudfront.net (108.138.51.28): icmp_seq=3 ttl=250 time=18.0 ms
+64 bytes from server-108-138-51-28.waw51.r.cloudfront.net (108.138.51.28): icmp_seq=4 ttl=250 time=18.7 ms
+
+--- sre-test-assignment.innervate.tech ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3002ms
+rtt min/avg/max/mdev = 17.144/19.860/25.593/3.354 ms
+[2025-02-11 22:28:18] Running traceroute for sre-test-assignment.innervate.tech
+traceroute to sre-test-assignment.innervate.tech (108.138.51.28), 10 hops max, 60 byte packets
+ 1  _gateway (192.168.7.7)  1.983 ms  1.805 ms  1.771 ms
+ 2  10.0.255.255 (10.0.255.255)  7.321 ms  5.476 ms  5.449 ms
+ 3  194.33.189.15 (194.33.189.15)  5.418 ms  5.393 ms  5.366 ms
+ 4  amazon.1-ix.net (185.1.254.91)  23.484 ms  23.453 ms  23.425 ms
+ 5  * * *
+ 6  * * *
+ 7  * * *
+ 8  * * *
+ 9  15.230.19.253 (15.230.19.253)  19.729 ms * *
+10  * * *
+[2025-02-11 22:28:20] Running NSLookup for sre-test-assignment.innervate.tech
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	sre-test-assignment.innervate.tech
+Address: 108.138.51.107
+Name:	sre-test-assignment.innervate.tech
+Address: 108.138.51.63
+Name:	sre-test-assignment.innervate.tech
+Address: 108.138.51.28
+Name:	sre-test-assignment.innervate.tech
+Address: 108.138.51.78
+
+[2025-02-11 22:28:20] Checking SSL Certificate for sre-test-assignment.innervate.tech
+notBefore=May 19 00:00:00 2024 GMT
+notAfter=Jun 17 23:59:59 2025 GMT
+subject=CN = innervate.tech
+issuer=C = US, O = Amazon, CN = Amazon RSA 2048 M02
